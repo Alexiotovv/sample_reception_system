@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C6415F29-C4D5-4BF8-82F6-476A031E385A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>WindowsApplication1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsApplication1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsApplication1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Outlook, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.Office.Interop" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmRecepcionMuestra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecepcionMuestra.Designer.vb">
+      <DependentUpon>frmRecepcionMuestra.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMagicList.Designer.vb">
+      <DependentUpon>frmMagicList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMagicList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRespcrInfluenza.Designer.vb">
+      <DependentUpon>frmRespcrInfluenza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRespcrInfluenza.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form14.Designer.vb">
+      <DependentUpon>Form14.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form14.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarInfluenza.Designer.vb">
+      <DependentUpon>frmEditarInfluenza.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarInfluenza.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnvioMuestras.Designer.vb">
+      <DependentUpon>frmEnvioMuestras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnvioMuestras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiltroMuestraEnvio.Designer.vb">
+      <DependentUpon>frmFiltroMuestraEnvio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFiltroMuestraEnvio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogiin.Designer.vb">
+      <DependentUpon>frmLogiin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogiin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcercaStafVir.Designer.vb">
+      <DependentUpon>frmAcercaStafVir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcercaStafVir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm AgregarCodigo.Designer.vb">
+      <DependentUpon>frm AgregarCodigo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm AgregarCodigo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrBusquedaCodigo.Designer.vb">
+      <DependentUpon>fmrBusquedaCodigo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fmrBusquedaCodigo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarRecepcion.Designer.vb">
+      <DependentUpon>frmEditarRecepcion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarRecepcion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRespcrDengue.Designer.vb">
+      <DependentUpon>frmRespcrDengue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRespcrDengue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListavb.Designer.vb">
+      <DependentUpon>frmListavb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListavb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRapidTest.Designer.vb">
+      <DependentUpon>frmRapidTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRapidTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResumenDia.Designer.vb">
+      <DependentUpon>frmResumenDia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmResumenDia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm1.Designer.vb">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.vb">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmRecepcionMuestra.resx">
+      <DependentUpon>frmRecepcionMuestra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMagicList.resx">
+      <DependentUpon>frmMagicList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRespcrInfluenza.resx">
+      <DependentUpon>frmRespcrInfluenza.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form14.resx">
+      <DependentUpon>Form14.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarInfluenza.resx">
+      <DependentUpon>frmEditarInfluenza.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnvioMuestras.resx">
+      <DependentUpon>frmEnvioMuestras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiltroMuestraEnvio.resx">
+      <DependentUpon>frmFiltroMuestraEnvio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogiin.resx">
+      <DependentUpon>frmLogiin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcercaStafVir.resx">
+      <DependentUpon>frmAcercaStafVir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm AgregarCodigo.resx">
+      <DependentUpon>frm AgregarCodigo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrBusquedaCodigo.resx">
+      <DependentUpon>fmrBusquedaCodigo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarRecepcion.resx">
+      <DependentUpon>frmEditarRecepcion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRespcrDengue.resx">
+      <DependentUpon>frmRespcrDengue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListavb.resx">
+      <DependentUpon>frmListavb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRapidTest.resx">
+      <DependentUpon>frmRapidTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResumenDia.resx">
+      <DependentUpon>frmResumenDia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm1.resx">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arardecer amazonico - copia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arardecer amazonico.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address_book_edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emperatriz1_800.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono-frío.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freddo2.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
